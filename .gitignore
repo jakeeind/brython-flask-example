@@ -1,0 +1,10 @@
+.vscode
+node_modules
+*.cfg
+*.egg-info
+*.pyc
+__pycache__
+app/build
+app/dist
+static/download
+*.xlsx

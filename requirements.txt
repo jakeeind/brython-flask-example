@@ -1,0 +1,6 @@
+wheel
+flake8
+flask
+flask-mongoengine
+watchdog
+brython
