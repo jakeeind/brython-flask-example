@@ -8,11 +8,11 @@ with open("requirements.txt", "r") as fp:
 
 init = os.path.join(os.path.dirname(__file__), "myApp", "__init__.py")
 version_line = list(filter(lambda l: l.startswith("__version__"), open(init)))[0]
-VERSION = version_line.split("=")[-1].replace("'", "").strip()
+VERSION = version_line.split("=")[-1].replace("\"", "").strip()
 
 setup(
     name="myApp",
-    version=0.1,
+    version=VERSION,
     description="",
     # long_description=README + '\n\n' + CHANGES,
     classifiers=[
